@@ -1,14 +1,17 @@
 # Eclipse Modeling 2025-03 R runtime bug on Windows (MWE)
 
-This repository holds a Minimal Working Example (MWE) to demonstrate a bug in Eclipse Modeling 2025-03 R on Windows-based systems.
+This repository holds a Minimal Working Example (MWE) to demonstrate a bug in **Eclipse Modeling 2025-03 R** on **Windows**-based systems.
 
-(The bug does not occur on Linux.)
+The bug does not occur on Linux, macOS, or older versions of Eclipse (e.g., 2024-12 R).
+
+## Description
 
 Normally, you can create a plug-in project in your development workspace and let it export some Java packages.
-On your runtime workspace, you can have other projects that have the first project as dependency defined in their `MANIFEST.MF` files.
+Import and export of such projects is managed via the `MANIFEST.MF` file(s).
+On your runtime workspace, you can have other projects that have the projects of the development workspace as dependency defined in their `MANIFEST.MF`.
 Eclipse should normally resolve the dependencies automatically and compile the project(s) within the runtime workspace correctly.
 
-However, since updating to Eclipse Modeling 2025-03 R this last steps seems to be broken on Windows-based systems only.
+However, since updating to Eclipse Modeling 2025-03 R this seems to be broken on Windows-based systems only.
 
 ## Steps to reproduce the bug
 
