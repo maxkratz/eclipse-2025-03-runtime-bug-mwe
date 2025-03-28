@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Project
+Bundle-SymbolicName: org.example.runtime.project
+Bundle-Version: 1.0.0.qualifier
+Require-Bundle: org.example.dev.project;bundle-version="1.0.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-21
+Automatic-Module-Name: org.example.runtime.project
